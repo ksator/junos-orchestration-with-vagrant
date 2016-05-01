@@ -1,0 +1,63 @@
+system {
+    host-name {{ inventory_hostname }};
+    services {
+        ssh {
+            root-login allow;
+        }
+        netconf {
+            ssh;
+        }
+    }
+}
+interfaces {
+{% for neighbor in underlay.neighbors %}
+    {{ neighbor.interface }} {
+        unit 0 {
+            description "{{ neighbor.name }}";
+            family inet {
+                address {{ neighbor.local_ip }}/30;
+            }
+        }
+    }
+{% endfor %}
+}
+protocols {
+    lldp {
+        interface all;
+    }
+    bgp {
+        group underlay {
+            import bgp-in;
+            export bgp-out;
+            type external;
+            local-as {{ underlay.local.asn }};
+            multipath multiple-as;
+{% for neighbor in underlay.neighbors %}
+            neighbor {{ neighbor.peer_ip }} {
+                peer-as {{ neighbor.asn }};
+            }
+{% endfor %}
+        }
+    }
+}
+
+routing-options {
+    router-id {{ host.loopback.ip }};
+    forwarding-table {
+        export bgp-ecmp;
+    }
+}
+
+policy-options {
+    policy-statement bgp-ecmp {
+        then {
+            load-balance per-packet;
+        }
+    }
+    policy-statement bgp-in {
+        then accept;
+    }
+    policy-statement bgp-out {
+        then accept;
+    }
+}

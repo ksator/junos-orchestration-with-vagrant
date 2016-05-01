@@ -1,0 +1,18 @@
+host_name: vsrx03
+host:
+    loopback:
+        ip: 10.20.1.3
+underlay:
+    local:
+        asn: 110
+    neighbors:
+      - interface: ge-0/0/1
+        name: to vsrx01
+        asn: 104
+        peer_ip: 192.168.0.2
+        local_ip: 192.168.0.3
+      - interface: ge-0/0/2
+        name: to vsrx02
+        asn: 109
+        peer_ip: 192.168.0.5
+        local_ip: 192.168.0.4

@@ -1,0 +1,23 @@
+- name: Build and deploy configuration
+  hosts: all
+  connection: local
+  gather_facts: no
+  roles:
+    - Juniper.junos
+  tasks:
+    - name: Build configuration
+      template: src=template.j2 dest={{ inventory_hostname }}.conf
+
+    - name: Deploy config to device ... please wait
+      junos_install_config:
+        host={{ ansible_ssh_host }}
+        port={{ ansible_ssh_port }}
+        user=root
+        passwd=Juniper
+        comment="configured by ansible"
+        file={{ inventory_hostname }}.conf
+        logfile=changes.log
+
+
+
+

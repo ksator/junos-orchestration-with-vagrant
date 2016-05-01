@@ -1,0 +1,71 @@
+2016-04-25 16:23:31,568:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2221
+2016-04-25 16:23:31,602:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2016-04-25 16:23:31,746:ncclient.transport.ssh:Authentication (publickey) failed.
+2016-04-25 16:23:31,757:ncclient.transport.ssh:Authentication (password) successful!
+2016-04-25 16:23:32,148:ncclient.transport.session:initialized: session-id=2217 | server_capabilities=['http://xml.juniper.net/dmi/system/1.0', 'urn:ietf:params:xml:ns:netconf:capability:confirmed-commit:1.0', 'http://xml.juniper.net/netconf/junos/1.0', 'urn:ietf:params:xml:ns:netconf:capability:validate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:candidate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:url:1.0?protocol=http,ftp,file', 'urn:ietf:params:xml:ns:netconf:base:1.0']
+2016-04-25 16:23:32,148:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant/3vsrx/vsrx01.conf
+2016-04-25 16:23:32,148:CONFIG:127.0.0.1:taking lock
+2016-04-25 16:23:32,152:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:23:32,274:CONFIG:127.0.0.1:loading config
+2016-04-25 16:23:32,277:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:23:32,397:CONFIG:127.0.0.1:Unable to load config: ConfigLoadError(severity: error, bad_element: set, message: syntax error)
+2016-04-25 16:23:32,397:CONFIG:127.0.0.1:unlocking
+2016-04-25 16:23:32,399:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:23:32,469:ncclient.operations.rpc:Requesting 'CloseSession'
+2016-04-25 16:30:51,665:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2221
+2016-04-25 16:30:51,704:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2016-04-25 16:30:51,825:ncclient.transport.ssh:Authentication (publickey) failed.
+2016-04-25 16:30:51,855:ncclient.transport.ssh:Authentication (password) successful!
+2016-04-25 16:30:52,208:ncclient.transport.session:initialized: session-id=2223 | server_capabilities=['http://xml.juniper.net/dmi/system/1.0', 'urn:ietf:params:xml:ns:netconf:capability:confirmed-commit:1.0', 'http://xml.juniper.net/netconf/junos/1.0', 'urn:ietf:params:xml:ns:netconf:capability:validate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:candidate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:url:1.0?protocol=http,ftp,file', 'urn:ietf:params:xml:ns:netconf:base:1.0']
+2016-04-25 16:30:52,209:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant/3vsrx/vsrx01.set
+2016-04-25 16:30:52,209:CONFIG:127.0.0.1:taking lock
+2016-04-25 16:30:52,211:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:52,330:CONFIG:127.0.0.1:loading config
+2016-04-25 16:30:52,332:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:52,454:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:52,678:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2016-04-25 16:30:52,680:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:53,155:CONFIG:127.0.0.1:committing change, please be patient
+2016-04-25 16:30:53,159:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:54,447:CONFIG:127.0.0.1:unlocking
+2016-04-25 16:30:54,448:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:30:54,568:CONFIG:127.0.0.1:change completed
+2016-04-25 16:30:54,569:ncclient.operations.rpc:Requesting 'CloseSession'
+2016-04-25 16:33:44,037:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2222
+2016-04-25 16:33:44,087:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2016-04-25 16:33:44,186:ncclient.transport.ssh:Authentication (publickey) failed.
+2016-04-25 16:33:44,216:ncclient.transport.ssh:Authentication (password) successful!
+2016-04-25 16:33:44,598:ncclient.transport.session:initialized: session-id=2217 | server_capabilities=['http://xml.juniper.net/dmi/system/1.0', 'urn:ietf:params:xml:ns:netconf:capability:confirmed-commit:1.0', 'http://xml.juniper.net/netconf/junos/1.0', 'urn:ietf:params:xml:ns:netconf:capability:validate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:candidate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:url:1.0?protocol=http,ftp,file', 'urn:ietf:params:xml:ns:netconf:base:1.0']
+2016-04-25 16:33:44,598:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant/3vsrx/vsrx02.set
+2016-04-25 16:33:44,598:CONFIG:127.0.0.1:taking lock
+2016-04-25 16:33:44,602:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:44,720:CONFIG:127.0.0.1:loading config
+2016-04-25 16:33:44,723:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:44,845:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:45,013:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2016-04-25 16:33:45,015:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:45,537:CONFIG:127.0.0.1:committing change, please be patient
+2016-04-25 16:33:45,540:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:46,978:CONFIG:127.0.0.1:unlocking
+2016-04-25 16:33:46,978:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:33:47,095:CONFIG:127.0.0.1:change completed
+2016-04-25 16:33:47,096:ncclient.operations.rpc:Requesting 'CloseSession'
+2016-04-25 16:37:50,931:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2223
+2016-04-25 16:37:50,969:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2016-04-25 16:37:51,140:ncclient.transport.ssh:Authentication (publickey) failed.
+2016-04-25 16:37:51,157:ncclient.transport.ssh:Authentication (password) successful!
+2016-04-25 16:37:51,695:ncclient.transport.session:initialized: session-id=2217 | server_capabilities=['http://xml.juniper.net/dmi/system/1.0', 'urn:ietf:params:xml:ns:netconf:capability:confirmed-commit:1.0', 'http://xml.juniper.net/netconf/junos/1.0', 'urn:ietf:params:xml:ns:netconf:capability:validate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:candidate:1.0', 'urn:ietf:params:xml:ns:netconf:capability:url:1.0?protocol=http,ftp,file', 'urn:ietf:params:xml:ns:netconf:base:1.0']
+2016-04-25 16:37:51,696:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant/3vsrx/vsrx03.set
+2016-04-25 16:37:51,696:CONFIG:127.0.0.1:taking lock
+2016-04-25 16:37:51,741:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:51,830:CONFIG:127.0.0.1:loading config
+2016-04-25 16:37:51,846:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:51,979:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:52,211:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2016-04-25 16:37:52,224:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:52,806:CONFIG:127.0.0.1:committing change, please be patient
+2016-04-25 16:37:52,810:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:54,854:CONFIG:127.0.0.1:unlocking
+2016-04-25 16:37:54,855:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2016-04-25 16:37:54,972:CONFIG:127.0.0.1:change completed
+2016-04-25 16:37:54,973:ncclient.operations.rpc:Requesting 'CloseSession'

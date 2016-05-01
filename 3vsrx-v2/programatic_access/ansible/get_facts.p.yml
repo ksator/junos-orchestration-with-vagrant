@@ -1,0 +1,27 @@
+---
+ - name: Get Facts
+   hosts: vsrx
+   roles:       
+    - Juniper.junos
+   connection: local
+   gather_facts: no
+
+  
+   tasks:
+
+   - name: Retrieve information from devices running Junos
+     junos_get_facts:
+      host={{ ansible_ssh_host }}
+      port={{ ansible_ssh_port }}
+      user=root
+      passwd=Juniper
+      savedir=inventory
+     register: junos
+
+   - name: Print some facts
+     debug: msg="device {{junos["facts"]["hostname"]}} runs version {{junos.facts.version}}" 
+     #when: junos.facts.version != "12.3R11.2"
+ 
+          
+
+
