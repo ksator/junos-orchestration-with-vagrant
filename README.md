@@ -1,5 +1,7 @@
 # vagrant-junos
 
+requirements: vagrant and virtual box. junos plugin for vagrant. 
+
 "3_vsrx_vagrant_non_provisionning" has vagrant details for a topo with 3 vsrx (ffp) connected together. 
 
 "3vsrx" has vagrant details for a topo with 3 vsrx (ffp) connected together + ansible provisionner (basic).
@@ -11,5 +13,7 @@ This ons is more advanced and interresting: ansible uses a jinja2 template to bu
 The server is provisonned (pyez, ansible, and some automation content as well). 
 so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box. 
 so no need to install programs (ansible pyez ...) on your laptop.  
+
+
 
 
