@@ -10,7 +10,7 @@ https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 
 "3vsrx" has vagrant details for a topo with 3 vsrx (ffp) connected together + ansible provisionner (basic).
 
-"3vsrx-v2" has vagrant details for a topo with 3 vsrx (ffp) connected together + ansible provisionner. 
+"3vsrx-v2" has vagrant details for a topology with 3 vsrx (ffp) connected together + ansible provisionner. 
 This ons is more advanced and interresting: ansible uses a jinja2 template to build bgp details for each device and then push the conf
 
 "ubuntu_junos" has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). 
