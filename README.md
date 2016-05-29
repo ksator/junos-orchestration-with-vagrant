@@ -1,6 +1,10 @@
 # vagrant-junos
 
-requirements: vagrant and virtual box. junos plugin for vagrant. 
+requirements: vagrant and virtual box. junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)
+
+Some links about Vagrant and Junos:  
+https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
+https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 
 "3_vsrx_vagrant_non_provisionning" has vagrant details for a topo with 3 vsrx (ffp) connected together. 
 
