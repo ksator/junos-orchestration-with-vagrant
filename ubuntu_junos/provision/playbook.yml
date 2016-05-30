@@ -12,8 +12,8 @@
    - name: Retrieve information from devices running Junos
      junos_get_facts:
       host={{ ip }}
-      user=khelil
-      passwd=Juniper123
+      user=root
+      passwd=Juniper
      register: junos
 
    - name: Print some facts
