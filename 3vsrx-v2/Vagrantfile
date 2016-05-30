@@ -1,13 +1,6 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "juniper/ffp-12.1X47-D15.4-packetmode"
 
-  config.vm.provision "ansible" do |ansible|
-    ansible.groups = {
-                "vsrx" => ["vsrx01", "vsrx02", "vsrx03"],
-                "all:children" => ["vsrx"]
-    }
-  end
-
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
     vb.memory = "1024"
@@ -20,9 +13,6 @@ Vagrant.configure(2) do |config|
                       virtualbox__intnet: "vsrx01-vsrx02"
     vsrx01.vm.network "private_network",
                       virtualbox__intnet: "vsrx03-vsrx01"
-    vsrx01.vm.provision "ansible" do |ansible| 
-        ansible.playbook = "ansible_playbook2.yml" 
-    end
   end
 
   config.vm.define "vsrx02" do |vsrx02|
@@ -32,9 +22,6 @@ Vagrant.configure(2) do |config|
                       virtualbox__intnet: "vsrx01-vsrx02"
     vsrx02.vm.network "private_network",
                       virtualbox__intnet: "vsrx02-vsrx03"
-    vsrx02.vm.provision "ansible" do |ansible| 
-        ansible.playbook = "ansible_playbook2.yml" 
-    end
   end
 
   config.vm.define "vsrx03" do |vsrx03|
@@ -44,9 +31,14 @@ Vagrant.configure(2) do |config|
                       virtualbox__intnet: "vsrx03-vsrx01"
     vsrx03.vm.network "private_network",
                       virtualbox__intnet: "vsrx02-vsrx03"
-    vsrx03.vm.provision "ansible" do |ansible| 
-        ansible.playbook = "ansible_playbook2.yml" 
-    end
   end
+  
+  config.vm.provision "ansible" do |ansible|
+    ansible.groups = {
+                "vsrx" => ["vsrx01", "vsrx02", "vsrx03"],
+                "all:children" => ["vsrx"]
+    }
+    ansible.playbook = "ansible_playbook2.yml" 
+  end
+  
 end
-
