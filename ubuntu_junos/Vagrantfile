@@ -18,7 +18,10 @@
      sudo apt-get install -y python-dev libxml2-dev python-pip libxslt1-dev build-essential libssl-dev libffi-dev git 
      sudo pip install cryptography==1.2.1
      sudo pip install junos-eznc
-     sudo pip install ansible==1.9.4 
+     sudo pip install ansible==1.9.4
+     #sudo pip install ansible
+     #sudo pip install jxmlease
+     #sudo pip install junos-netconify
      sudo ansible-galaxy --force install Juniper.junos
     SHELL
     ubuntu.vm.synced_folder "synced_folder", "/home/vagrant/scripts"  
