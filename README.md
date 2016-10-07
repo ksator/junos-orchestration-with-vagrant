@@ -8,7 +8,7 @@ https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 
 There are 4 examples: 
 
-- ** 3_vsrx_vagrant_non_provisionning ** has vagrant details for a topo with 3 vsrx (ffp) connected together. 
+- **3_vsrx_vagrant_non_provisionning** has vagrant details for a topo with 3 vsrx (ffp) connected together. 
 
 - ** 3vsrx ** has vagrant details for a topo with 3 vsrx (ffp) connected together + ansible provisionner (basic).
 
