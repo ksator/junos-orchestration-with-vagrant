@@ -6,6 +6,7 @@ Some links about Vagrant and Junos:
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
+https://github.com/Juniper/vqfx10k-vagrant  
 
 There are 4 examples: 
 
