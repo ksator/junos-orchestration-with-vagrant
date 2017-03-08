@@ -1,7 +1,5 @@
 # vagrant-junos
 
-requirements: vagrant and virtual box. junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)
-
 Some links about Vagrant and Junos:  
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
@@ -20,5 +18,18 @@ There are 4 examples:
 
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
 
-
+Usage:
+- Requirements: vagrant and virtual box. junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)
+- clone the repo
+```
+git clone https://github.com/ksator/vagrant-with-junos.git
+```
+- move to the local copy
+```
+cd vagrant-junos
+```
+- move to the directory you want to use and run the below command:
+```
+vagrant up
+```
 
