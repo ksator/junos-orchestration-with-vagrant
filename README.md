@@ -19,8 +19,13 @@ There are 4 examples into this repository:
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
 
 Usage:
-- Requirements: vagrant and virtual box. junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)
-- clone the repo
+
+- Requirements:   
+    - vagrant  
+    - virtual box  
+    - junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)  
+    
+- clone the repository: 
 ```
 git clone https://github.com/ksator/vagrant-with-junos.git
 ```
@@ -28,7 +33,7 @@ git clone https://github.com/ksator/vagrant-with-junos.git
 ```
 cd vagrant-with-junos
 ```
-- move to the directory you want to use, and run the command "vagrant up"
+- move to the directory you want to use, and then run the command "vagrant up"
 
 Example with the directory 3vsrx-v2: 
 ```
