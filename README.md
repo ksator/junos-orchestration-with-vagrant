@@ -18,6 +18,7 @@ There are 4 examples into this repository:
 
 - **ubuntu_junos** has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box.  so no need to install programs (ansible pyez ...) on your laptop.  
 
+###  Network topology: 
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
 
 ### How to use this repository:
@@ -36,6 +37,10 @@ git clone https://github.com/ksator/vagrant-with-junos.git
 cd vagrant-with-junos
 ```
 - move to the directory you want to use, and then run the command "vagrant up"
+```
+cd xxxx
+vagrant up
+```
 
 ### Demo (example with the directory 3vsrx-v2): 
 ```
@@ -468,5 +473,19 @@ PLAY RECAP *********************************************************************
 vsrx01                     : ok=2    changed=0    unreachable=0    failed=0   
 vsrx02                     : ok=2    changed=0    unreachable=0    failed=0   
 vsrx03                     : ok=2    changed=0    unreachable=0    failed=0   
+```
+
+```
+ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy 
+    vsrx03: Are you sure you want to destroy the 'vsrx03' VM? [y/N] y
+==> vsrx03: Forcing shutdown of VM...
+==> vsrx03: Destroying VM and associated drives...
+    vsrx02: Are you sure you want to destroy the 'vsrx02' VM? [y/N] y
+==> vsrx02: Forcing shutdown of VM...
+==> vsrx02: Destroying VM and associated drives...
+    vsrx01: Are you sure you want to destroy the 'vsrx01' VM? [y/N] y
+==> vsrx01: Forcing shutdown of VM...
+==> vsrx01: Destroying VM and associated drives...
+ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ 
 
 ```
