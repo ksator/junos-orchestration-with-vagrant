@@ -1,10 +1,12 @@
-# vagrant-junos
+### vagrant for junos: 
 
 Some links about Vagrant and Junos:  
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
 https://github.com/Juniper/vqfx10k-vagrant  
+
+### What to find in this repository: 
 
 There are 4 examples into this repository: 
 
@@ -18,7 +20,7 @@ There are 4 examples into this repository:
 
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
 
-Usage:
+### How to use this repository:
 
 - Requirements:   
     - vagrant  
@@ -35,7 +37,7 @@ cd vagrant-with-junos
 ```
 - move to the directory you want to use, and then run the command "vagrant up"
 
-Example with the directory 3vsrx-v2: 
+### Demo (example with the directory 3vsrx-v2): 
 ```
 ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
 ksator@ubuntu:~$ cd vagrant-with-junos/
