@@ -6,7 +6,7 @@ https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
 https://github.com/Juniper/vqfx10k-vagrant  
 
-There are 4 examples: 
+There are 4 examples into this repository: 
 
 - **3_vsrx_vagrant_non_provisionning** has vagrant details for a topo with 3 vsrx (ffp) connected together. 
 
@@ -26,9 +26,9 @@ git clone https://github.com/ksator/vagrant-with-junos.git
 ```
 - move to the local copy
 ```
-cd vagrant-junos
+cd vagrant-with-junos
 ```
-- move to the directory you want to use and run the below command:
+- move to the directory you want to use, and run the below command:
 ```
 vagrant up
 ```
