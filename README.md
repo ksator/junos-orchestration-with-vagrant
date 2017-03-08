@@ -31,11 +31,11 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
 ```
 git clone https://github.com/ksator/vagrant-with-junos.git
 ```
-- Move to the local copy
+- Move to the local copy:  
 ```
 cd vagrant-with-junos
 ```
-- Move to the directory you want to use, and then run the command "vagrant up"
+- Move to the directory you want to use, and then run the command "vagrant up" to create the topology:  
 ```
 cd xxxx
 vagrant up
@@ -47,6 +47,7 @@ ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
 ksator@ubuntu:~$ cd vagrant-with-junos/
 ksator@ubuntu:~/vagrant-with-junos$ cd 3vsrx-v2
 ```
+##### Check the installed plugins
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant plugin list 
 vagrant-host (0.0.1)
@@ -54,6 +55,7 @@ vagrant-host-shell (0.0.4)
 vagrant-junos (0.2.1)
 vagrant-share (1.1.5, system)
 ```
+
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant up
 Bringing machine 'vsrx01' up with 'virtualbox' provider...
@@ -208,7 +210,7 @@ vsrx03                     : ok=2    changed=2    unreachable=0    failed=0
 
 ```
 
-
+##### Check the states of the machines
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant status 
 Current machine states:
@@ -221,7 +223,7 @@ This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
 ```
-
+##### Check the junos configuration files (template rendered by ansible): 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ more /tmp/vsrx01.conf 
 system {
@@ -295,8 +297,8 @@ policy-options {
     }
 }
 ```
+##### Check the devices configuration (provisonned by ansible)
 ```
-
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant ssh vsrx01
 --- JUNOS 12.1X47-D15.4 built 2014-11-12 02:13:59 UTC
 root@vsrx01% cli
@@ -354,8 +356,9 @@ root@vsrx01> show configuration | compare rollback 1
 +          then accept;
 +      }
 +  }
-
-
+```
+##### Check the devices op states
+```
 root@vsrx01> show lldp neighbors 
 Local Interface    Parent Interface    Chassis Id          Port info          System Name
 ge-0/0/1.0         -                   4c:96:14:10:01:00   to vsrx01          vsrx02              
@@ -446,7 +449,7 @@ root@vsrx01% exit
 logout
 Connection to 127.0.0.1 closed.
 ```
-
+##### execute automation content against the topology:  
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ python programatic_access/python/print_facts_vagrant.py
 the device vsrx01 is a FIREFLY-PERIMETER running 12.1X47-D15.4
@@ -480,7 +483,7 @@ vsrx01                     : ok=2    changed=0    unreachable=0    failed=0
 vsrx02                     : ok=2    changed=0    unreachable=0    failed=0   
 vsrx03                     : ok=2    changed=0    unreachable=0    failed=0   
 ```
-
+##### destroy the VMs 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy 
     vsrx03: Are you sure you want to destroy the 'vsrx03' VM? [y/N] y
