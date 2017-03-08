@@ -33,7 +33,7 @@ cd vagrant-with-junos
 vagrant up
 ```
 
-Example: 
+Example with the directory 3vsrx-v2: 
 ```
 cd 3vsrx-v2/
 vagrant up
