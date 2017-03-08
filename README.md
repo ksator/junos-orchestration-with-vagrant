@@ -7,7 +7,7 @@ https://github.com/Juniper/vqfx10k-vagrant
 
 ### What to find in this repository: 
 
-There are 4 examples into this repository: 
+There are 4 ready to use examples into this repository: 
 
 - **3_vsrx_vagrant_non_provisionning** has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
 
@@ -47,7 +47,7 @@ ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
 ksator@ubuntu:~$ cd vagrant-with-junos/
 ksator@ubuntu:~/vagrant-with-junos$ cd 3vsrx-v2
 ```
-##### Check the installed plugins
+##### Check the installed plugins: 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant plugin list 
 vagrant-host (0.0.1)
@@ -55,7 +55,7 @@ vagrant-host-shell (0.0.4)
 vagrant-junos (0.2.1)
 vagrant-share (1.1.5, system)
 ```
-
+##### Deploy the topology described into the Vagrantfile: 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant up
 Bringing machine 'vsrx01' up with 'virtualbox' provider...
@@ -210,7 +210,7 @@ vsrx03                     : ok=2    changed=2    unreachable=0    failed=0
 
 ```
 
-##### Check the states of the machines
+##### Check the states of the virtual machines
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant status 
 Current machine states:
@@ -223,7 +223,7 @@ This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
 ```
-##### Check the junos configuration files (template rendered by ansible): 
+##### Check the junos configuration files (the jinja2 template is rendered by ansible): 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ more /tmp/vsrx01.conf 
 system {
@@ -297,7 +297,7 @@ policy-options {
     }
 }
 ```
-##### Check the devices configuration (provisonned by ansible)
+##### Check the devices configuration (they are provisonned by ansible): 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant ssh vsrx01
 --- JUNOS 12.1X47-D15.4 built 2014-11-12 02:13:59 UTC
@@ -357,12 +357,13 @@ root@vsrx01> show configuration | compare rollback 1
 +      }
 +  }
 ```
-##### Check the devices op states
+##### Check the devices op states of the devices: 
 ```
 root@vsrx01> show lldp neighbors 
 Local Interface    Parent Interface    Chassis Id          Port info          System Name
 ge-0/0/1.0         -                   4c:96:14:10:01:00   to vsrx01          vsrx02              
 ge-0/0/2.0         -                   4c:96:14:10:01:00   to vsrx01          vsrx03              
+
 
 root@vsrx01> show bgp neighbor   
 Peer: 192.168.0.1+179 AS 109   Local: 192.168.0.0+51314 AS 104  
@@ -483,7 +484,7 @@ vsrx01                     : ok=2    changed=0    unreachable=0    failed=0
 vsrx02                     : ok=2    changed=0    unreachable=0    failed=0   
 vsrx03                     : ok=2    changed=0    unreachable=0    failed=0   
 ```
-##### destroy the VMs 
+##### destroy the VMs: 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy 
     vsrx03: Are you sure you want to destroy the 'vsrx03' VM? [y/N] y
@@ -495,6 +496,5 @@ ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy
     vsrx01: Are you sure you want to destroy the 'vsrx01' VM? [y/N] y
 ==> vsrx01: Forcing shutdown of VM...
 ==> vsrx01: Destroying VM and associated drives...
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ 
 
 ```
