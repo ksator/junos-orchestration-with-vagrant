@@ -22,7 +22,7 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
 
 ### How to use this repository:
 
-- Deal you requirements:   
+- Deal with the requirements:   
     - Install vagrant  
     - Install virtual box  
     - Install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
