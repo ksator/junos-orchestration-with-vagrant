@@ -9,13 +9,13 @@ https://github.com/Juniper/vqfx10k-vagrant
 
 There are 4 ready to use examples into this repository: 
 
-- **3_vsrx_vagrant_non_provisionning** has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
+- The directory **3_vsrx_vagrant_non_provisionning** has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
 
-- **3vsrx** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible).
+- The directory **3vsrx** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible).
 
-- **3vsrx-v2** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible). This one is more advanced and interresting: ansible uses a jinja2 template to build bgp details for each device and then push the rendered configuration on the devices.  It has also some automation content (python and ansible) you can use against the topology.  
+- The directory **3vsrx-v2** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible). This one is more advanced and interresting: ansible uses a jinja2 template to build bgp details for each device and then push the rendered configuration on the devices.  It has also some automation content (python and ansible) you can use against the topology.  
 
-- **ubuntu_junos** has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box.  so no need to install programs (ansible pyez ...) on your laptop.  
+- The directory **ubuntu_junos** has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box.  so no need to install programs (ansible pyez ...) on your laptop.  
 
 ###  Network topology: 
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
