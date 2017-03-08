@@ -1,4 +1,4 @@
-### vagrant for junos: 
+### About vagrant for junos: 
 
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
@@ -9,11 +9,11 @@ https://github.com/Juniper/vqfx10k-vagrant
 
 There are 4 examples into this repository: 
 
-- **3_vsrx_vagrant_non_provisionning** has vagrant details for a topo with 3 vsrx (ffp) connected together. 
+- **3_vsrx_vagrant_non_provisionning** has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
 
-- **3vsrx** has vagrant details for a topo with 3 vsrx (ffp) connected together + ansible provisionner (basic).
+- **3vsrx** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible).
 
-- **3vsrx-v2** has vagrant details for a topology with 3 vsrx (ffp) connected together + ansible provisionner. This one is more advanced and interresting: ansible uses a jinja2 template to build bgp details for each device and then push the conf
+- **3vsrx-v2** has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology, and a vagrant provisionner (ansible). This one is more advanced and interresting: ansible uses a jinja2 template to build bgp details for each device and then push the rendered configuration on the devices.  It has also some automation content (python and ansible) you can use against the topology.  
 
 - **ubuntu_junos** has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box.  so no need to install programs (ansible pyez ...) on your laptop.  
 
@@ -22,20 +22,20 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
 
 ### How to use this repository:
 
-- Requirements:   
-    - vagrant  
-    - virtual box  
-    - junos plugin for vagrant (https://github.com/JNPRAutomate/vagrant-junos)  
+- Deal you requirements:   
+    - Install vagrant  
+    - Install virtual box  
+    - Install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
     
-- clone the repository: 
+- Clone the repository: 
 ```
 git clone https://github.com/ksator/vagrant-with-junos.git
 ```
-- move to the local copy
+- Move to the local copy
 ```
 cd vagrant-with-junos
 ```
-- move to the directory you want to use, and then run the command "vagrant up"
+- Move to the directory you want to use, and then run the command "vagrant up"
 ```
 cd xxxx
 vagrant up
