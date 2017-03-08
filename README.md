@@ -1,6 +1,5 @@
 ### vagrant for junos: 
 
-Some links about Vagrant and Junos:  
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
@@ -47,6 +46,13 @@ vagrant up
 ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
 ksator@ubuntu:~$ cd vagrant-with-junos/
 ksator@ubuntu:~/vagrant-with-junos$ cd 3vsrx-v2
+```
+```
+ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant plugin list 
+vagrant-host (0.0.1)
+vagrant-host-shell (0.0.4)
+vagrant-junos (0.2.1)
+vagrant-share (1.1.5, system)
 ```
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant up
