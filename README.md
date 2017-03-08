@@ -33,3 +33,15 @@ cd vagrant-with-junos
 vagrant up
 ```
 
+Example: 
+```
+cd 3vsrx-v2/
+vagrant up
+vagrant status
+ansible-playbook programatic_access/ansible/get_facts.p.yml -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory 
+python programatic_access/python/print_facts_vagrant.py
+```
+```
+vagrant ssh vsrx02
+```
+
