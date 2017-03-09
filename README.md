@@ -1,9 +1,9 @@
 ### About vagrant for junos: 
 
-https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
+https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/  
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
-https://github.com/Juniper/vqfx10k-vagrant
+https://github.com/Juniper/vqfx10k-vagrant  
 
 ### Junos vagrant boxes:  
 
@@ -52,15 +52,18 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
     - Install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
     - Some of these examples requires Ansible to provision automatically the Vagrant boxes.  
     
-- Clone the repository: 
+- Clone the repository:  
+
 ```
 git clone https://github.com/ksator/vagrant-with-junos.git
 ```
 - Move to the local copy:  
+
 ```
 cd vagrant-with-junos
 ```
 - Move to the directory you want to use, and then run the command "vagrant up" to create the topology:  
+
 ```
 cd xxxx
 vagrant up
@@ -330,11 +333,14 @@ policy-options {
 }
 ```
 ##### Check the devices configuration (they are provisonned by ansible): 
+###### Open a connection to the device
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant ssh vsrx01
 --- JUNOS 12.1X47-D15.4 built 2014-11-12 02:13:59 UTC
 root@vsrx01% cli
-
+```
+###### Check the device configuration changes
+```
 root@vsrx01> show system commit          
 0   2017-03-08 17:19:06 UTC by root via netconf
     configured by ansible
@@ -389,14 +395,16 @@ root@vsrx01> show configuration | compare rollback 1
 +      }
 +  }
 ```
-##### Check the devices op states of the devices: 
+##### Check the devices op states of the devices:  
+###### LLDP
 ```
 root@vsrx01> show lldp neighbors 
 Local Interface    Parent Interface    Chassis Id          Port info          System Name
 ge-0/0/1.0         -                   4c:96:14:10:01:00   to vsrx01          vsrx02              
 ge-0/0/2.0         -                   4c:96:14:10:01:00   to vsrx01          vsrx03              
-
-
+```
+###### BGP
+```
 root@vsrx01> show bgp neighbor   
 Peer: 192.168.0.1+179 AS 109   Local: 192.168.0.0+51314 AS 104  
   Type: External    State: Established    Flags: <Sync>
@@ -475,7 +483,9 @@ Peer: 192.168.0.3+55454 AS 110 Local: 192.168.0.2+179 AS 104
   Input messages:  Total 9      Updates 4       Refreshes 0     Octets 302
   Output messages: Total 7      Updates 2       Refreshes 0     Octets 268
   Output Queue[0]: 0
-
+```  
+##### Close the device connection: 
+```
 root@vsrx01> exit 
 
 root@vsrx01% exit
@@ -483,13 +493,14 @@ logout
 Connection to 127.0.0.1 closed.
 ```
 ##### execute automation content against the topology:  
+###### Python (PyEZ)
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ python programatic_access/python/print_facts_vagrant.py
 the device vsrx01 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 the device vsrx02 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 the device vsrx03 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 ```
-
+###### Ansible 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ ansible-playbook programatic_access/ansible/get_facts.p.yml -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
 
