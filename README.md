@@ -3,7 +3,11 @@
 https://ittechnologist.wordpress.com/2015/09/09/use-vagrant-with-juniper-junos-vms-on-windows/
 https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/  
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
-https://github.com/Juniper/vqfx10k-vagrant  
+https://github.com/Juniper/vqfx10k-vagrant
+
+### Junos vagrant boxes: 
+- vqfx http://www.juniper.net/us/en/dm/free-vqfx-trial/ 
+- vsrx https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper 
 
 ### Vagrant presentation: 
 
