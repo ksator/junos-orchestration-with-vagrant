@@ -258,7 +258,7 @@ This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
 ```
-##### Check the junos configuration files (the jinja2 template is rendered by ansible): 
+##### Check the junos configuration files created by the Ansible (the jinja2 template is rendered by ansible): 
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ more /tmp/vsrx01.conf 
 system {
@@ -344,7 +344,8 @@ root@vsrx01% cli
 root@vsrx01> show system commit          
 0   2017-03-08 17:19:06 UTC by root via netconf
     configured by ansible
-
+```
+```
 root@vsrx01> show configuration | compare rollback 1 
 [edit interfaces ge-0/0/1 unit 0]
 +    description "to vsrx02";
