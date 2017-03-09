@@ -46,7 +46,14 @@ cd xxxx
 vagrant up
 ```
 
-### Demo (example with the directory 3vsrx-v2): 
+### Demo 
+
+#### example with the directory 3vsrx-v2
+
+you first need to install Vagrant, Virtual box, and the required Vagrant plugins.  
+
+##### Clone the repo, and move to the directory 3vsrx-v2:
+
 ```
 ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
 ksator@ubuntu:~$ cd vagrant-with-junos/
