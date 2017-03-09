@@ -5,6 +5,10 @@ https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
 https://github.com/Juniper/vqfx10k-vagrant  
 
+### Vagrant presentation: 
+
+https://github.com/ksator/vagrant-with-junos/blob/master/Vagrant.pdf
+
 ### What to find in this repository: 
 
 There are 4 ready to use examples into this repository: 
@@ -18,6 +22,7 @@ There are 4 ready to use examples into this repository:
 - The directory **ubuntu_junos** has vagrant details for a vsrx (ffp) and an ubuntu box (14.04). The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some automation content against a junos vagrant box.  so no need to install programs (ansible pyez ...) on your laptop.  
 
 ###  Network topology: 
+
 The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
 
 ### How to use this repository:
