@@ -24,7 +24,7 @@ There are 4 ready to use examples into this repository. There are 4 directories,
 
 - The directory **3vsrx**: 
     - it has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology.  
-    - it uses a vagrant provisionner (ansible).  
+    - it uses a vagrant provisionner (ansible, with basic ansible content).  
     - it uses a Virtualbox provider.  
 
 - The directory **3vsrx-v2**: 
