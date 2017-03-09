@@ -509,4 +509,15 @@ ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy
 ==> vsrx01: Forcing shutdown of VM...
 ==> vsrx01: Destroying VM and associated drives...
 
+ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant status 
+Current machine states:
+
+vsrx01                    not created (virtualbox)
+vsrx02                    not created (virtualbox)
+vsrx03                    not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+
 ```
