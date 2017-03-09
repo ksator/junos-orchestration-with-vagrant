@@ -11,7 +11,7 @@ https://github.com/ksator/vagrant-with-junos/blob/master/Vagrant.pdf
 
 ### What to find in this repository: 
 
-There are 4 ready to use examples into this repository: 
+There are 4 ready to use examples into this repository. There are 4 directories, each one has its own Vagranfile:   
 
 - The directory **3_vsrx_vagrant_non_provisionning** has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
 
