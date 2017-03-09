@@ -5,9 +5,10 @@ https://keepingitclassless.net/2015/03/go-go-gadget-networking-lab/
 https://www.dravetech.com/blog/2016/01/08/vagrant-for-network-engineers.html  
 https://github.com/Juniper/vqfx10k-vagrant
 
-### Junos vagrant boxes: 
-- vqfx http://www.juniper.net/us/en/dm/free-vqfx-trial/ 
-- vsrx https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper 
+### Junos vagrant boxes:  
+
+https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper 
+Other Junos Vagrant boxes are also available, but they are not publicly available.  
 
 ### Vagrant presentation: 
 
@@ -35,6 +36,7 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
     - Install vagrant  
     - Install virtual box  
     - Install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
+    - Some of these examples requires Ansible to provision automatically the Vagrant boxes.  
     
 - Clone the repository: 
 ```
