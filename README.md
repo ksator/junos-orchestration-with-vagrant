@@ -7,7 +7,7 @@ https://github.com/Juniper/vqfx10k-vagrant
 
 ### Junos vagrant boxes:  
 
-https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper 
+https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper   
 Other Junos Vagrant boxes are also available, but they are not publicly available.  
 
 ### Vagrant presentation: 
