@@ -69,9 +69,9 @@ cd xxxx
 vagrant up
 ```
 
-### Demo 
+### Demo:   
 
-#### example with the directory 3vsrx-v2
+#### example with the directory 3vsrx-v2: 
 
 you first need to install Vagrant, Virtual box, and the required Vagrant plugins.  
 
