@@ -7,8 +7,14 @@ https://github.com/Juniper/vqfx10k-vagrant
 
 ### Junos vagrant boxes:  
 
-- vsrx: https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper   
-- vqfx: http://www.juniper.net/us/en/dm/free-vqfx-trial/
+- vsrx: 
+https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=juniper   
+
+- vqfx: 
+http://www.juniper.net/us/en/dm/free-vqfx-trial/  
+https://atlas.hashicorp.com/juniper/boxes/vqfx10k-re/  
+https://atlas.hashicorp.com/juniper/boxes/vqfx10k-pfe/   
+
 
 ### Vagrant presentation: 
 
