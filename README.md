@@ -22,7 +22,7 @@ https://github.com/ksator/vagrant-with-junos/blob/master/Vagrant.pdf
 
 ### What to find in this repository: 
 
-There are 4 ready to use examples into this repository. There are 4 directories, each one has its own Vagranfile:   
+There are 4 ready-to-use examples into this repository. There are 4 directories, each one has its own Vagranfile:   
 
 - The directory **3_vsrx_vagrant_non_provisionning**:
     - it has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
@@ -36,15 +36,15 @@ There are 4 ready to use examples into this repository. There are 4 directories,
 - The directory **3vsrx-v2**: 
     - it has vagrant details for a 3 vsrx (ffp) connected together in a triangle topology.  
     - it use a Virtualbox provider.  
-    - it uses a vagrant provisionner (ansible). This one is more advanced and interresting: ansible uses a jinja2 template to build bgp
+    - it uses a vagrant provisionner (ansible). This one is more advanced and interesting: ansible uses a jinja2 template to build bgp
     details for each device and then push the rendered configuration on the devices.  
     - it has also some automation content (python and ansible) you can use against the topology.  
 
 - The directory **ubuntu_junos**:  
-    - It has vagrant details for a vsrx (ffp) and an ubuntu box (14.04).  
-    - It uses a Virtualbox provider.  
-    - The server is provisonned (pyez, ansible, and some automation content as well). so you can use the ubuntu vagrant box to test some
-    automation content against a junos vagrant box. so no need to install programs (ansible pyez ...) on your laptop.  
+    - it has vagrant details for a vsrx (ffp) and an ubuntu box (14.04).  
+    - it uses a Virtualbox provider.  
+    - the server is provisonned (pyez, ansible, and some automation content as well). So you can use the ubuntu vagrant box to test some
+    automation content against a junos vagrant box. So no need to install programs (ansible pyez ...) on your laptop.  
 
 ###  Network topology: 
 
@@ -53,10 +53,10 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
 ### How to use this repository:
 
 - Deal with the requirements:   
-    - Install vagrant  
-    - Install virtual box  
-    - Install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
-    - Some of these examples requires Ansible to provision automatically the Vagrant boxes.  
+    - install vagrant  
+    - install virtual box  
+    - install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
+    - some of these examples require Ansible to automatically provision the Vagrant boxes.  
     
 - Clone the repository:  
 
@@ -79,7 +79,7 @@ vagrant up
 
 #### example with the directory 3vsrx-v2: 
 
-you first need to install Vagrant, Virtual box, and the required Vagrant plugins.  
+You first need to install Vagrant, Virtual box, and the required Vagrant plugins.  
 
 ##### Clone the repo, and move to the directory 3vsrx-v2:
 
@@ -338,7 +338,7 @@ policy-options {
     }
 }
 ```
-##### Check the devices configuration (they are provisonned by ansible): 
+##### Check the devices configuration (they are provisioned by ansible): 
 ###### Open a connection to the device
 ```
 ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant ssh vsrx01
