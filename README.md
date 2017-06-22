@@ -22,7 +22,7 @@ https://github.com/ksator/vagrant-with-junos/blob/master/Vagrant.pdf
 
 ### What to find in this repository: 
 
-There are 4 ready-to-use examples into this repository. There are 4 directories, each one has its own Vagranfile:   
+There are several ready-to-use examples into this repository. There are several directories, each one has its own Vagranfile:   
 
 - The directory **3_vsrx_vagrant_non_provisionning**:
     - it has vagrant details for 3 vsrx (ffp) connected together in a triangle topology.  
@@ -45,6 +45,11 @@ There are 4 ready-to-use examples into this repository. There are 4 directories,
     - it uses a Virtualbox provider.  
     - the server is provisonned (pyez, ansible, and some automation content as well). So you can use the ubuntu vagrant box to test some
     automation content against a junos vagrant box. So no need to install programs (ansible pyez ...) on your laptop.  
+    
+- The directory **vqfx**:
+    - it has vagrant details for one vqfx10k.  
+    - it uses a Virtualbox provider.   
+    - it uses a vagrant provisionner (ansible, with basic ansible content). 
 
 ###  Network topology: 
 
