@@ -1,0 +1,29 @@
+Vagrant.configure(2) do |config|
+  config.ssh.insert_key = false
+  config.vm.box = "juniper/vqfx10k-re"
+  
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "pb.yml"
+  end
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = true
+    vb.memory = "1024"
+  end
+
+  config.vm.define "vqfx01" do |vqfx01|
+    vqfx01.vm.host_name = "vqfx01"
+    vqfx01.vm.network "forwarded_port", guest: 22, host: 2231, id: "ssh"
+    vqfx01.vm.network "forwarded_port", guest: 830, host: 8331
+  end
+
+end
+
+
+
+
+           
+            
+
+            
+            

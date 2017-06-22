@@ -1,0 +1,5 @@
+set system host-name vqfx01
+set system syslog host 192.168.233.17 any any
+set system syslog host 192.168.233.17 match UI_COMMIT_COMPLETED
+set system syslog host 192.168.233.17 port 516
+
