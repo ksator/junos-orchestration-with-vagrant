@@ -1,0 +1,171 @@
+2017-09-06 02:33:19,608:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-09-06 02:33:19,629:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-09-06 02:33:19,820:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-09-06 02:33:19,850:ncclient.transport.ssh:Authentication (password) successful!
+2017-09-06 02:33:20,029:ncclient.transport.session:initialized: session-id=1692 | server_capabilities=<dictionary-keyiterator object at 0x7fe98900d788>
+2017-09-06 02:33:20,030:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-09-06 02:33:20,030:CONFIG:127.0.0.1:taking lock
+2017-09-06 02:33:20,030:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:20,148:CONFIG:127.0.0.1:loading config
+2017-09-06 02:33:20,148:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:20,265:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:20,545:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-09-06 02:33:20,546:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:21,263:CONFIG:127.0.0.1:committing change, please be patient
+2017-09-06 02:33:21,264:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:22,491:CONFIG:127.0.0.1:unlocking
+2017-09-06 02:33:22,491:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 02:33:22,607:CONFIG:127.0.0.1:change completed
+2017-09-06 02:33:22,607:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-09-06 03:13:26,877:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-09-06 03:13:26,894:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-09-06 03:13:27,127:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-09-06 03:13:27,197:ncclient.transport.ssh:Authentication (password) successful!
+2017-09-06 03:13:27,433:ncclient.transport.session:initialized: session-id=1690 | server_capabilities=<dictionary-keyiterator object at 0x7fca140d8788>
+2017-09-06 03:13:27,433:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-09-06 03:13:27,433:CONFIG:127.0.0.1:taking lock
+2017-09-06 03:13:27,434:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:27,552:CONFIG:127.0.0.1:loading config
+2017-09-06 03:13:27,553:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:27,669:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:27,938:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-09-06 03:13:27,938:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:28,657:CONFIG:127.0.0.1:committing change, please be patient
+2017-09-06 03:13:28,657:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:30,229:CONFIG:127.0.0.1:unlocking
+2017-09-06 03:13:30,229:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-06 03:13:30,345:CONFIG:127.0.0.1:change completed
+2017-09-06 03:13:30,346:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-09-12 02:25:00,541:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-09-12 02:25:00,556:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-09-12 02:25:00,812:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-09-12 02:25:00,866:ncclient.transport.ssh:Authentication (password) successful!
+2017-09-12 02:25:01,159:ncclient.transport.session:initialized: session-id=1688 | server_capabilities=<dictionary-keyiterator object at 0x7f8fb1470788>
+2017-09-12 02:25:01,159:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-09-12 02:25:01,159:CONFIG:127.0.0.1:taking lock
+2017-09-12 02:25:01,160:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:01,285:CONFIG:127.0.0.1:loading config
+2017-09-12 02:25:01,286:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:01,412:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:01,790:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-09-12 02:25:01,791:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:02,754:CONFIG:127.0.0.1:committing change, please be patient
+2017-09-12 02:25:02,754:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:05,020:CONFIG:127.0.0.1:unlocking
+2017-09-12 02:25:05,021:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-09-12 02:25:05,144:CONFIG:127.0.0.1:change completed
+2017-09-12 02:25:05,144:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-11-02 01:55:33,477:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-11-02 01:55:33,491:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-11-02 01:55:33,640:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-11-02 01:55:33,675:ncclient.transport.ssh:Authentication (password) successful!
+2017-11-02 01:55:33,815:ncclient.transport.session:initialized: session-id=1696 | server_capabilities=<dictionary-keyiterator object at 0x7ff23fa5bdb8>
+2017-11-02 01:55:33,815:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-11-02 01:55:33,816:CONFIG:127.0.0.1:taking lock
+2017-11-02 01:55:33,816:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:33,988:CONFIG:127.0.0.1:loading config
+2017-11-02 01:55:33,989:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:34,056:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:34,323:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-11-02 01:55:34,323:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:34,992:CONFIG:127.0.0.1:committing change, please be patient
+2017-11-02 01:55:34,992:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:36,264:CONFIG:127.0.0.1:unlocking
+2017-11-02 01:55:36,264:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 01:55:36,381:CONFIG:127.0.0.1:change completed
+2017-11-02 01:55:36,381:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-11-02 02:32:38,574:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-11-02 02:32:38,588:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-11-02 02:32:38,713:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-11-02 02:32:38,754:ncclient.transport.ssh:Authentication (password) successful!
+2017-11-02 02:32:38,936:ncclient.transport.session:initialized: session-id=1692 | server_capabilities=<dictionary-keyiterator object at 0x7ffb6b272db8>
+2017-11-02 02:32:38,937:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-11-02 02:32:38,937:CONFIG:127.0.0.1:taking lock
+2017-11-02 02:32:38,938:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:39,007:CONFIG:127.0.0.1:loading config
+2017-11-02 02:32:39,008:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:39,126:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:39,343:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-11-02 02:32:39,343:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:39,911:CONFIG:127.0.0.1:committing change, please be patient
+2017-11-02 02:32:39,911:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:40,880:CONFIG:127.0.0.1:unlocking
+2017-11-02 02:32:40,880:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-02 02:32:40,997:CONFIG:127.0.0.1:change completed
+2017-11-02 02:32:40,997:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-11-14 01:58:23,136:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-11-14 01:58:23,153:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-11-14 01:58:23,348:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-11-14 01:58:23,384:ncclient.transport.ssh:Authentication (password) successful!
+2017-11-14 01:58:23,706:ncclient.transport.session:initialized: session-id=1696 | server_capabilities=<dictionary-keyiterator object at 0x7fec51aebf18>
+2017-11-14 01:58:23,706:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-11-14 01:58:23,707:CONFIG:127.0.0.1:taking lock
+2017-11-14 01:58:23,707:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:23,826:CONFIG:127.0.0.1:loading config
+2017-11-14 01:58:23,827:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:23,893:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:24,161:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-11-14 01:58:24,161:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:24,780:CONFIG:127.0.0.1:committing change, please be patient
+2017-11-14 01:58:24,780:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:25,951:CONFIG:127.0.0.1:unlocking
+2017-11-14 01:58:25,952:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 01:58:26,067:CONFIG:127.0.0.1:change completed
+2017-11-14 01:58:26,067:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-11-14 05:05:23,684:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-11-14 05:05:23,697:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-11-14 05:05:23,822:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-11-14 05:05:23,829:ncclient.transport.ssh:Authentication (password) successful!
+2017-11-14 05:05:23,956:ncclient.transport.session:initialized: session-id=1696 | server_capabilities=<dictionary-keyiterator object at 0x7f1c2cf16db8>
+2017-11-14 05:05:23,956:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-11-14 05:05:23,956:CONFIG:127.0.0.1:taking lock
+2017-11-14 05:05:23,957:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:24,075:CONFIG:127.0.0.1:loading config
+2017-11-14 05:05:24,076:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:24,194:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:24,411:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-11-14 05:05:24,412:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:24,930:CONFIG:127.0.0.1:committing change, please be patient
+2017-11-14 05:05:24,930:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:25,951:CONFIG:127.0.0.1:unlocking
+2017-11-14 05:05:25,952:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-11-14 05:05:26,019:CONFIG:127.0.0.1:change completed
+2017-11-14 05:05:26,019:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-12-08 08:54:42,283:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2017-12-08 08:54:42,295:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2017-12-08 08:54:42,439:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-12-08 08:54:42,477:ncclient.transport.ssh:Authentication (password) successful!
+2017-12-08 08:54:42,660:ncclient.transport.session:initialized: session-id=1691 | server_capabilities=<dictionary-keyiterator object at 0x7fe08144bf18>
+2017-12-08 08:54:42,661:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2017-12-08 08:54:42,661:CONFIG:127.0.0.1:taking lock
+2017-12-08 08:54:42,661:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:42,732:CONFIG:127.0.0.1:loading config
+2017-12-08 08:54:42,733:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:42,850:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:43,116:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-12-08 08:54:43,117:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:43,685:CONFIG:127.0.0.1:committing change, please be patient
+2017-12-08 08:54:43,685:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:44,756:CONFIG:127.0.0.1:unlocking
+2017-12-08 08:54:44,757:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-12-08 08:54:44,874:CONFIG:127.0.0.1:change completed
+2017-12-08 08:54:44,874:ncclient.operations.rpc:Requesting 'CloseSession'
+2018-01-22 06:14:50,541:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2231
+2018-01-22 06:14:50,552:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6.1)
+2018-01-22 06:14:50,707:ncclient.transport.ssh:Authentication (publickey) failed.
+2018-01-22 06:14:50,737:ncclient.transport.ssh:Authentication (password) successful!
+2018-01-22 06:14:50,880:ncclient.transport.session:initialized: session-id=1691 | server_capabilities=<dictionary-keyiterator object at 0x7f63456f0890>
+2018-01-22 06:14:50,880:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/vqfx/junos_config.set
+2018-01-22 06:14:50,880:CONFIG:127.0.0.1:taking lock
+2018-01-22 06:14:50,881:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:51,047:CONFIG:127.0.0.1:loading config
+2018-01-22 06:14:51,047:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:51,113:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:51,380:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2018-01-22 06:14:51,380:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:51,898:CONFIG:127.0.0.1:committing change, please be patient
+2018-01-22 06:14:51,898:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:53,072:CONFIG:127.0.0.1:unlocking
+2018-01-22 06:14:53,073:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:14:53,189:CONFIG:127.0.0.1:change completed
+2018-01-22 06:14:53,189:ncclient.operations.rpc:Requesting 'CloseSession'
