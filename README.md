@@ -18,7 +18,8 @@ https://atlas.hashicorp.com/juniper/boxes/vqfx10k-pfe/
 
 ### Vagrant presentation: 
 
-https://github.com/ksator/junos-orchestration-with-vagrantblob/master/Vagrant.pdf
+https://github.com/ksator/junos-orchestration-with-vagrant/blob/master/Vagrant.pdf
+
 
 
 ### What to find in this repository: 
