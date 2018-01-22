@@ -334,3 +334,41 @@
 2016-05-01 14:18:24,135:ncclient.operations.rpc:Requesting 'ExecuteRpc'
 2016-05-01 14:18:24,252:CONFIG:127.0.0.1:change completed
 2016-05-01 14:18:24,252:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-10-01 13:47:16,226:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2221
+2017-10-01 13:47:16,355:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2017-10-01 13:47:16,567:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-10-01 13:47:16,785:ncclient.transport.ssh:Authentication (password) successful!
+2017-10-01 13:47:17,205:ncclient.transport.session:initialized: session-id=2218 | server_capabilities=<dictionary-keyiterator object at 0x7f8b4e54e9f0>
+2017-10-01 13:47:17,205:CONFIG:127.0.0.1:pushing file: /tmp/vsrx01.conf
+2017-10-01 13:47:17,205:CONFIG:127.0.0.1:taking lock
+2017-10-01 13:47:17,206:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:17,327:CONFIG:127.0.0.1:loading config
+2017-10-01 13:47:17,328:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:17,503:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:17,771:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-10-01 13:47:17,771:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:18,388:CONFIG:127.0.0.1:committing change, please be patient
+2017-10-01 13:47:18,389:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:20,659:CONFIG:127.0.0.1:unlocking
+2017-10-01 13:47:20,659:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:47:20,782:CONFIG:127.0.0.1:change completed
+2017-10-01 13:47:20,783:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-10-01 13:52:04,862:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2222
+2017-10-01 13:52:05,010:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2017-10-01 13:52:05,851:ncclient.transport.ssh:Authentication (publickey) failed.
+2017-10-01 13:52:05,868:ncclient.transport.ssh:Authentication (password) successful!
+2017-10-01 13:52:07,953:ncclient.transport.session:initialized: session-id=2218 | server_capabilities=<dictionary-keyiterator object at 0x7fb6712b29f0>
+2017-10-01 13:52:07,953:CONFIG:127.0.0.1:pushing file: /tmp/vsrx02.conf
+2017-10-01 13:52:07,953:CONFIG:127.0.0.1:taking lock
+2017-10-01 13:52:07,954:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:08,074:CONFIG:127.0.0.1:loading config
+2017-10-01 13:52:08,074:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:08,722:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:09,354:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2017-10-01 13:52:09,354:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:11,505:CONFIG:127.0.0.1:committing change, please be patient
+2017-10-01 13:52:11,505:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:21,166:CONFIG:127.0.0.1:unlocking
+2017-10-01 13:52:21,166:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-10-01 13:52:21,266:CONFIG:127.0.0.1:change completed
+2017-10-01 13:52:21,267:ncclient.operations.rpc:Requesting 'CloseSession'
