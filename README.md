@@ -18,7 +18,8 @@ https://atlas.hashicorp.com/juniper/boxes/vqfx10k-pfe/
 
 ### Vagrant presentation: 
 
-https://github.com/ksator/vagrant-with-junos/blob/master/Vagrant.pdf
+https://github.com/ksator/junos-orchestration-with-vagrantblob/master/Vagrant.pdf
+
 
 ### What to find in this repository: 
 
@@ -59,7 +60,7 @@ There are several ready-to-use examples into this repository. There are several 
 
 ###  Network topology: 
 
-The topology for all examples: https://github.com/ksator/vagrant-junos/blob/master/topology.pdf
+The topology for all examples: https://github.com/ksator/junos-orchestration-with-vagrant/blob/master/topology.pdf
 
 ### How to use this repository:
 
@@ -72,12 +73,12 @@ The topology for all examples: https://github.com/ksator/vagrant-junos/blob/mast
 - Clone the repository:  
 
 ```
-git clone https://github.com/ksator/vagrant-with-junos.git
+git clone https://github.com/ksator/junos-orchestration-with-vagrant.git
 ```
 - Move to the local copy:  
 
 ```
-cd vagrant-with-junos
+cd junos-orchestration-with-vagrant
 ```
 - Move to the directory you want to use, and then run the command "vagrant up" to create the topology:  
 
@@ -95,13 +96,13 @@ You first need to install Vagrant, Virtual box, and the required Vagrant plugins
 ##### Clone the repo, and move to the directory 3vsrx-v2:
 
 ```
-ksator@ubuntu:~$ git clone https://github.com/ksator/vagrant-with-junos.git
-ksator@ubuntu:~$ cd vagrant-with-junos/
-ksator@ubuntu:~/vagrant-with-junos$ cd 3vsrx-v2
+ksator@ubuntu:~$ git clone https://github.com/ksator/junos-orchestration-with-vagrant.git
+ksator@ubuntu:~$ cd junos-orchestration-with-vagrant/
+ksator@ubuntu:~/junos-orchestration-with-vagrant$ cd 3vsrx-v2
 ```
 ##### Check the installed plugins: 
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant plugin list 
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ vagrant plugin list 
 vagrant-host (0.0.1)
 vagrant-host-shell (0.0.4)
 vagrant-junos (0.2.1)
@@ -109,7 +110,7 @@ vagrant-share (1.1.5, system)
 ```
 ##### Deploy the topology described into the Vagrantfile: 
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant up
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ vagrant up
 Bringing machine 'vsrx01' up with 'virtualbox' provider...
 Bringing machine 'vsrx02' up with 'virtualbox' provider...
 Bringing machine 'vsrx03' up with 'virtualbox' provider...
@@ -264,7 +265,7 @@ vsrx03                     : ok=2    changed=2    unreachable=0    failed=0
 
 ##### Check the states of the virtual machines
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant status 
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ vagrant status 
 Current machine states:
 
 vsrx01                    running (virtualbox)
@@ -277,7 +278,7 @@ VM, run `vagrant status NAME`.
 ```
 ##### Check the junos configuration files created by the Ansible (the jinja2 template is rendered by ansible): 
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ more /tmp/vsrx01.conf 
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ more /tmp/vsrx01.conf 
 system {
     host-name vsrx01;
     services {
@@ -352,7 +353,7 @@ policy-options {
 ##### Check the devices configuration (they are provisioned by ansible): 
 ###### Open a connection to the device
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant ssh vsrx01
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ vagrant ssh vsrx01
 --- JUNOS 12.1X47-D15.4 built 2014-11-12 02:13:59 UTC
 root@vsrx01% cli
 ```
@@ -513,14 +514,14 @@ Connection to 127.0.0.1 closed.
 ##### execute automation content against the topology:  
 ###### Python (PyEZ)
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ python programatic_access/python/print_facts_vagrant.py
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ python programatic_access/python/print_facts_vagrant.py
 the device vsrx01 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 the device vsrx02 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 the device vsrx03 is a FIREFLY-PERIMETER running 12.1X47-D15.4
 ```
 ###### Ansible 
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ ansible-playbook programatic_access/ansible/get_facts.p.yml -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ ansible-playbook programatic_access/ansible/get_facts.p.yml -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
 
 PLAY [Get Facts] ***************************************************************
 
@@ -547,7 +548,7 @@ vsrx03                     : ok=2    changed=0    unreachable=0    failed=0
 ```
 ##### destroy the VMs: 
 ```
-ksator@ubuntu:~/vagrant-with-junos/3vsrx-v2$ vagrant destroy 
+ksator@ubuntu:~/junos-orchestration-with-vagrant/3vsrx-v2$ vagrant destroy 
     vsrx03: Are you sure you want to destroy the 'vsrx03' VM? [y/N] y
 ==> vsrx03: Forcing shutdown of VM...
 ==> vsrx03: Destroying VM and associated drives...
