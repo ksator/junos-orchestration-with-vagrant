@@ -9,20 +9,17 @@
       vb.gui = false
       vb.memory = "2048"
     end 
+    ubuntu.vm.provision "file", source: "ansible.cfg", destination: "ansible.cfg" 
     ubuntu.vm.provision "file", source: "provision", destination: "provision"
     #ubuntu.vm.provision "file", source: "data/template.j2", destination: "/tmp/template.j2"
     ubuntu.vm.provision "shell", inline: <<-SHELL
      #mkdir dir1
      #touch dir1/file1
      sudo apt-get update
-     sudo apt-get install -y python-dev libxml2-dev python-pip libxslt1-dev build-essential libssl-dev libffi-dev git 
-     sudo pip install cryptography==1.2.1
-     sudo pip install junos-eznc
-     sudo pip install ansible==1.9.4
-     #sudo pip install ansible
-     #sudo pip install jxmlease
-     #sudo pip install junos-netconify
-     sudo ansible-galaxy --force install Juniper.junos
+     sudo apt-get install -y python-dev libxml2-dev python-pip libxslt-dev build-essential libssl-dev libffi-dev libffi-dev
+     sudo pip install --upgrade setuptools
+     sudo pip install cryptography==1.2.1 junos-eznc ansible==2.4.2.0 jxmlease
+     sudo ansible-galaxy --force install Juniper.junos,1.4.3
     SHELL
     ubuntu.vm.synced_folder "synced_folder", "/home/vagrant/scripts"  
     ubuntu.ssh.username = "vagrant"
