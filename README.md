@@ -50,6 +50,12 @@ There are several ready-to-use examples into this repository. There are several 
     - it has vagrant details for one vqfx10k.  
     - it uses a Virtualbox provider.   
     - it uses a vagrant provisionner (ansible, with basic ansible content). 
+    
+ - The directory **vqfxfull**:  
+    - It's vagrantfile is using a vqfx10k-re and a vqfx10k-pfe
+    - it uses a Virtualbox provider
+    - it doesnt use a provisionner
+     
 
 ###  Network topology: 
 
