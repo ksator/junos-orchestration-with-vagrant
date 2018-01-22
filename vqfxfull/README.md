@@ -62,7 +62,7 @@ Bringing machine 'vqfx' up with 'virtualbox' provider...
 ==> vqfx: Setting hostname...
 ```
 ```
-root@ubuntu:~/vagrant-with-junos/test# vagrant status 
+root@ubuntu:~/junos-orchestration-with-vagrant/test# vagrant status 
 Current machine states:
 
 vqfx-pfe                  running (virtualbox)
@@ -73,7 +73,7 @@ above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
 ```
 ```
-root@ubuntu:~/vagrant-with-junos/test# vagrant ssh vqfx
+root@ubuntu:~/junos-orchestration-with-vagrant/test# vagrant ssh vqfx
 --- JUNOS 15.1X53-D63.9 built 2017-04-01 20:45:26 UTC
 {master:0}
 vagrant@vqfx-re> show chassis hardware 
