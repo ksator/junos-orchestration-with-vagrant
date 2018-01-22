@@ -69,3 +69,60 @@
 2016-04-25 16:37:54,855:ncclient.operations.rpc:Requesting 'ExecuteRpc'
 2016-04-25 16:37:54,972:CONFIG:127.0.0.1:change completed
 2016-04-25 16:37:54,973:ncclient.operations.rpc:Requesting 'CloseSession'
+2018-01-22 06:24:39,177:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2221
+2018-01-22 06:24:39,213:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2018-01-22 06:24:39,404:ncclient.transport.ssh:Authentication (publickey) failed.
+2018-01-22 06:24:39,434:ncclient.transport.ssh:Authentication (password) successful!
+2018-01-22 06:24:39,764:ncclient.transport.session:initialized: session-id=2217 | server_capabilities=<dictionary-keyiterator object at 0x7f98126973c0>
+2018-01-22 06:24:39,764:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/3vsrx/vsrx01.set
+2018-01-22 06:24:39,765:CONFIG:127.0.0.1:taking lock
+2018-01-22 06:24:39,765:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:39,882:CONFIG:127.0.0.1:loading config
+2018-01-22 06:24:39,884:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:40,002:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:40,221:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2018-01-22 06:24:40,221:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:40,694:CONFIG:127.0.0.1:committing change, please be patient
+2018-01-22 06:24:40,694:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:42,020:CONFIG:127.0.0.1:unlocking
+2018-01-22 06:24:42,020:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:24:42,139:CONFIG:127.0.0.1:change completed
+2018-01-22 06:24:42,140:ncclient.operations.rpc:Requesting 'CloseSession'
+2018-01-22 06:27:34,445:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2222
+2018-01-22 06:27:34,479:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2018-01-22 06:27:34,668:ncclient.transport.ssh:Authentication (publickey) failed.
+2018-01-22 06:27:34,698:ncclient.transport.ssh:Authentication (password) successful!
+2018-01-22 06:27:35,021:ncclient.transport.session:initialized: session-id=2217 | server_capabilities=<dictionary-keyiterator object at 0x7ff4b2fa7418>
+2018-01-22 06:27:35,021:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/3vsrx/vsrx02.set
+2018-01-22 06:27:35,021:CONFIG:127.0.0.1:taking lock
+2018-01-22 06:27:35,022:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:35,138:CONFIG:127.0.0.1:loading config
+2018-01-22 06:27:35,141:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:35,259:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:35,478:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2018-01-22 06:27:35,479:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:35,949:CONFIG:127.0.0.1:committing change, please be patient
+2018-01-22 06:27:35,949:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:37,279:CONFIG:127.0.0.1:unlocking
+2018-01-22 06:27:37,280:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:27:37,399:CONFIG:127.0.0.1:change completed
+2018-01-22 06:27:37,399:ncclient.operations.rpc:Requesting 'CloseSession'
+2018-01-22 06:31:29,969:CONFIG:127.0.0.1:connecting to host: root@127.0.0.1:2223
+2018-01-22 06:31:29,988:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_6.6)
+2018-01-22 06:31:30,167:ncclient.transport.ssh:Authentication (publickey) failed.
+2018-01-22 06:31:30,179:ncclient.transport.ssh:Authentication (password) successful!
+2018-01-22 06:31:30,666:ncclient.transport.session:initialized: session-id=2220 | server_capabilities=<dictionary-keyiterator object at 0x7f18a83393c0>
+2018-01-22 06:31:30,666:CONFIG:127.0.0.1:pushing file: /home/ksator/vagrant-with-junos/3vsrx/vsrx03.set
+2018-01-22 06:31:30,667:CONFIG:127.0.0.1:taking lock
+2018-01-22 06:31:30,667:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:30,785:CONFIG:127.0.0.1:loading config
+2018-01-22 06:31:30,786:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:30,902:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:31,119:CONFIG:127.0.0.1:doing a commit-check, please be patient
+2018-01-22 06:31:31,119:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:31,590:CONFIG:127.0.0.1:committing change, please be patient
+2018-01-22 06:31:31,590:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:33,008:CONFIG:127.0.0.1:unlocking
+2018-01-22 06:31:33,009:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2018-01-22 06:31:33,161:CONFIG:127.0.0.1:change completed
+2018-01-22 06:31:33,161:ncclient.operations.rpc:Requesting 'CloseSession'

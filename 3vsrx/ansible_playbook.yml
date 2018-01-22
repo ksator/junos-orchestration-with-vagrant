@@ -1,4 +1,4 @@
-- name: Build and deploy configuration
+- name: deploy configuration to junos devices
   hosts: all
   connection: local
   gather_facts: no
@@ -7,10 +7,10 @@
   tasks:
     - name: Deploy config to device ... please wait
       junos_install_config:
-        host={{ ansible_ssh_host }}
-        port={{ ansible_ssh_port }}
-        user=root
-        passwd=Juniper
-        comment="configured by ansible"
-        file={{ inventory_hostname }}.set
-        logfile=changes.log
+        host: "{{ ansible_ssh_host }}"
+        port: "{{ ansible_ssh_port }}"
+        user: "root"
+        passwd: "Juniper"
+        comment: "configured by ansible"
+        file: "{{ inventory_hostname }}.set"
+        logfile: "changes.log"
