@@ -70,7 +70,20 @@ The topology for all examples: https://github.com/ksator/junos-orchestration-wit
     - install virtual box  
     - install vagrant plugin for junos (https://github.com/JNPRAutomate/vagrant-junos)  
     - some of these examples require Ansible to automatically provision the Vagrant boxes.  
-    
+
+
+```
+$ vagrant --version
+Vagrant 2.0.1
+```
+```
+$ vagrant plugin list 
+vagrant-host (0.0.1)
+vagrant-host-shell (0.0.4)
+vagrant-junos (0.2.1)
+vagrant-share (1.1.9, system)
+```
+
 - Clone the repository:  
 
 ```
@@ -570,6 +583,17 @@ vsrx03                    not created (virtualbox)
 This environment represents multiple VMs. The VMs are all listed
 above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
+
+```
+
+##### Get the lists of your vagrat boxes:
+```
+$ vagrant box list
+juniper/ffp-12.1X47-D15.4-packetmode (virtualbox, 0.5.0)
+juniper/ffp-12.1X47-D20.7-packetmode (virtualbox, 0.5.0)
+juniper/vqfx10k-pfe                  (virtualbox, 0.1.0)
+juniper/vqfx10k-re                   (virtualbox, 0.2.0)
+ubuntu/trusty64                      (virtualbox, 20180110.0.0)
 
 ```
 
